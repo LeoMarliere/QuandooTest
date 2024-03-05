@@ -37,6 +37,9 @@
 		23AA4CC52B97568C003377E4 /* UserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CC42B97568C003377E4 /* UserCellView.swift */; };
 		23AA4CC62B97568C003377E4 /* UserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CC42B97568C003377E4 /* UserCellView.swift */; };
 		23AA4CC72B97568C003377E4 /* UserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CC42B97568C003377E4 /* UserCellView.swift */; };
+		23E5048B2B9769EF0037A9D0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5048A2B9769EF0037A9D0 /* APIManager.swift */; };
+		23E5048C2B9769EF0037A9D0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5048A2B9769EF0037A9D0 /* APIManager.swift */; };
+		23E5048D2B9769EF0037A9D0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5048A2B9769EF0037A9D0 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,7 @@
 		23AA4CBA2B974DB5003377E4 /* UserListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListConfigurator.swift; sourceTree = "<group>"; };
 		23AA4CBF2B97547E003377E4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		23AA4CC42B97568C003377E4 /* UserCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellView.swift; sourceTree = "<group>"; };
+		23E5048A2B9769EF0037A9D0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		23AA4C712B97459C003377E4 /* QuandooTest */ = {
 			isa = PBXGroup;
 			children = (
+				23E504892B9769DD0037A9D0 /* Manager */,
 				23AA4CA52B974627003377E4 /* Application */,
 				23AA4CC32B97567E003377E4 /* Cells */,
 				23AA4CBE2B975470003377E4 /* Models */,
@@ -216,6 +221,14 @@
 				23AA4CC42B97568C003377E4 /* UserCellView.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		23E504892B9769DD0037A9D0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				23E5048A2B9769EF0037A9D0 /* APIManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +366,7 @@
 				23AA4CB22B974D20003377E4 /* UserListPresenter.swift in Sources */,
 				23AA4CB62B974D2E003377E4 /* UserListSceneFactory.swift in Sources */,
 				23AA4CC52B97568C003377E4 /* UserCellView.swift in Sources */,
+				23E5048B2B9769EF0037A9D0 /* APIManager.swift in Sources */,
 				23AA4C732B97459C003377E4 /* AppDelegate.swift in Sources */,
 				23AA4C752B97459C003377E4 /* SceneDelegate.swift in Sources */,
 				23AA4CC02B97547E003377E4 /* User.swift in Sources */,
@@ -369,6 +383,7 @@
 				23AA4C8D2B97459D003377E4 /* QuandooTestTests.swift in Sources */,
 				23AA4CB32B974D20003377E4 /* UserListPresenter.swift in Sources */,
 				23AA4CAB2B974D07003377E4 /* UserListViewController.swift in Sources */,
+				23E5048C2B9769EF0037A9D0 /* APIManager.swift in Sources */,
 				23AA4CBC2B974DB5003377E4 /* UserListConfigurator.swift in Sources */,
 				23AA4CB72B974D2E003377E4 /* UserListSceneFactory.swift in Sources */,
 				23AA4CAF2B974D17003377E4 /* UserListInterector.swift in Sources */,
@@ -383,6 +398,7 @@
 			files = (
 				23AA4C992B97459D003377E4 /* QuandooTestUITestsLaunchTests.swift in Sources */,
 				23AA4CB02B974D17003377E4 /* UserListInterector.swift in Sources */,
+				23E5048D2B9769EF0037A9D0 /* APIManager.swift in Sources */,
 				23AA4C972B97459D003377E4 /* QuandooTestUITests.swift in Sources */,
 				23AA4CB42B974D20003377E4 /* UserListPresenter.swift in Sources */,
 				23AA4CC22B97547E003377E4 /* User.swift in Sources */,

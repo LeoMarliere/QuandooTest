@@ -74,6 +74,6 @@ extension UserListViewController: UserListViewControllerProtocol {
     
     func displayUserList(list: [User]) {
         self.userList = list
-        self.tableview.reloadData()
+        DispatchQueue.main.async { self.tableview.reloadData() }
     }
 }

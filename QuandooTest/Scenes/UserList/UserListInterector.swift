@@ -13,11 +13,16 @@ protocol UserListInteractorProtocol: AnyObject {
 
 class UserListInteractor {
     var presenter: UserListPresenterProtocol?
+    var apiManager: APIManagerProtocol?
+    
+    private let userURL = "https://jsonplaceholder.typicode.com/users"
 }
 
 extension UserListInteractor: UserListInteractorProtocol {
     
     func fetchUserList() {
-        presenter?.presentUserList()
+        apiManager?.fetchUserData(url: userURL ) { userData in
+            self.presenter?.presentUserList(userDataList: userData)
+        }
     }
 }

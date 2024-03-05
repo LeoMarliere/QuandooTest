@@ -24,9 +24,11 @@ final class UserListConfigurator: UserListSceneConfiguratorProtocol {
         
         let interactor = UserListInteractor()
         let presenter = UserListPresenter()
+        let apiManager = APIManager()
 
         presenter.view = vc
         interactor.presenter = presenter
+        interactor.apiManager = apiManager
         vc.interactor = interactor
         
         return vc
