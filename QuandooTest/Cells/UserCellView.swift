@@ -12,7 +12,7 @@ class UserCellView: UITableViewCell {
     //MARK: UIComponent
     let cellView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.darkGray
+        view.backgroundColor = UIColor.yellow
         view.layer.cornerRadius = 10
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -31,7 +31,7 @@ class UserCellView: UITableViewCell {
     let userNameLabel: UILabel = {
         let label = UILabel()
         label.text = "UserName"
-        label.textColor = UIColor.white
+        label.textColor = UIColor.darkGray
         label.font = UIFont.boldSystemFont(ofSize: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -83,17 +83,24 @@ class UserCellView: UITableViewCell {
         ])
         
         nameLabel.leftAnchor.constraint(equalTo: cellView.leftAnchor, constant: 20).isActive = true
-        nameLabel.topAnchor.constraint(equalTo: cellView.topAnchor, constant: 10).isActive = true
+        nameLabel.topAnchor.constraint(equalTo: cellView.topAnchor, constant: 5).isActive = true
         
         userNameLabel.leftAnchor.constraint(equalTo: cellView.leftAnchor, constant: 20).isActive = true
-        userNameLabel.topAnchor.constraint(equalTo: nameLabel.topAnchor, constant: 20).isActive = true
+        userNameLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 5).isActive = true
         
         emailLabel.leftAnchor.constraint(equalTo: cellView.leftAnchor, constant: 20).isActive = true
-        emailLabel.topAnchor.constraint(equalTo: userNameLabel.topAnchor, constant: 20).isActive = true
+        emailLabel.topAnchor.constraint(equalTo: userNameLabel.bottomAnchor, constant: 5).isActive = true
         
         addressLabel.leftAnchor.constraint(equalTo: cellView.leftAnchor, constant: 20).isActive = true
         addressLabel.rightAnchor.constraint(equalTo: cellView.rightAnchor, constant: -20).isActive = true
-        addressLabel.topAnchor.constraint(equalTo: emailLabel.topAnchor, constant: 20).isActive = true
+        addressLabel.topAnchor.constraint(equalTo: emailLabel.bottomAnchor, constant: 5).isActive = true
+    }
+    
+    func configure(user: User) {
+        self.nameLabel.text = user.name
+        self.userNameLabel.text = user.userName
+        self.emailLabel.text = user.email
+        self.addressLabel.text = user.address
     }
     
 }

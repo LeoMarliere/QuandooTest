@@ -62,13 +62,41 @@ class PostCellView: UITableViewCell {
             cellView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10)
         ])
         
+        titleLabel.numberOfLines = 2
         titleLabel.leftAnchor.constraint(equalTo: cellView.leftAnchor, constant: 20).isActive = true
         titleLabel.topAnchor.constraint(equalTo: cellView.topAnchor, constant: 10).isActive = true
         titleLabel.rightAnchor.constraint(equalTo: cellView.rightAnchor, constant: -20).isActive = true
         
         bodyLabel.leftAnchor.constraint(equalTo: cellView.leftAnchor, constant: 20).isActive = true
-        bodyLabel.topAnchor.constraint(equalTo: titleLabel.topAnchor, constant: 20).isActive = true
+        bodyLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5).isActive = true
         bodyLabel.rightAnchor.constraint(equalTo: cellView.rightAnchor, constant: -20).isActive = true
     }
+    
+    func configure(post: Post) {
+        self.titleLabel.text = post.title
+        self.bodyLabel.text = post.body
+
+    }
+    
+    // MARK: - Height Calculation
+      
+      static func height(for post: Post, width: CGFloat) -> CGFloat {
+          // Calculate the height based on the content of the post
+          let titleLabelHeight = heightForLabel(text: post.title, width: width, font: UIFont.boldSystemFont(ofSize: 14))
+          let bodyLabelHeight = heightForLabel(text: post.body, width: width, font: UIFont.systemFont(ofSize: 12))
+
+          let padding: CGFloat = 12
+          
+          return titleLabelHeight + bodyLabelHeight + padding
+      }
+      
+      private static func heightForLabel(text: String, width: CGFloat, font: UIFont) -> CGFloat {
+          let label = UILabel()
+          label.numberOfLines = 0
+          label.font = font
+          label.text = text
+          let size = label.sizeThatFits(CGSize(width: width, height: CGFloat.greatestFiniteMagnitude))
+          return size.height
+      }
     
 }

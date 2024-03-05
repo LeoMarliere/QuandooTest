@@ -57,11 +57,7 @@ class UserListViewController: UIViewController, UITableViewDelegate,  UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as! UserCellView
-        let user = userList[indexPath.row]
-        cell.nameLabel.text = user.name
-        cell.userNameLabel.text = user.userName
-        cell.emailLabel.text = user.email
-        cell.addressLabel.text = user.address
+        cell.configure(user: userList[indexPath.row])
         return cell
     }
     

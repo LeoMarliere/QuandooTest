@@ -60,14 +60,15 @@ class UserPostViewController: UIViewController, UITableViewDelegate,  UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostCellView
-        let post = postList[indexPath.row]
-        cell.titleLabel.text = post.title
-        cell.bodyLabel.text = post.body
+        cell.configure(post: postList[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        //return 100
+        
+        let post = postList[indexPath.row]
+        return PostCellView.height(for: post, width: tableView.bounds.width)
     }
 }
 
