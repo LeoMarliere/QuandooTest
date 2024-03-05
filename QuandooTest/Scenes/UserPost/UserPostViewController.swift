@@ -1,21 +1,24 @@
 //
-//  UserListViewController.swift
+//  UserPostViewController.swift
 //  QuandooTest
 //
 //  Created by Leo Marliere on 05/03/2024.
 //
 
+import Foundation
+
 import UIKit
 
-protocol UserListViewControllerProtocol: AnyObject {
-    func displayUserList(list: [User])
+protocol UserPostViewControllerProtocol: AnyObject {
+    func displayPostList(list: [Post])
 }
 
-class UserListViewController: UIViewController, UITableViewDelegate,  UITableViewDataSource {
+class UserPostViewController: UIViewController, UITableViewDelegate,  UITableViewDataSource {
     
     //MARK: Properties
-    var interactor: UserListInteractorProtocol?
-    var userList: [User] = []
+    var interactor: UserPostInteractorProtocol?
+    var postList: [Post] = []
+    var userID: Int = 0
     
     //MARK: UIComponent
     let tableview: UITableView = {
@@ -32,14 +35,14 @@ class UserListViewController: UIViewController, UITableViewDelegate,  UITableVie
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         setupTableView()
-        interactor?.fetchUserList()
+        interactor?.fetchPostList(userID: String(self.userID))
     }
     
     //MARK: Private Methods
     private func setupTableView() {
         tableview.delegate = self
         tableview.dataSource = self
-        tableview.register(UserCellView.self, forCellReuseIdentifier: "userCell")
+        tableview.register(PostCellView.self, forCellReuseIdentifier: "postCell")
         view.addSubview(tableview)
         
         NSLayoutConstraint.activate([
@@ -52,37 +55,26 @@ class UserListViewController: UIViewController, UITableViewDelegate,  UITableVie
     
     //MARK: Delegate & DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return userList.count
+        return postList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableview.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as! UserCellView
-        let user = userList[indexPath.row]
-        cell.nameLabel.text = user.name
-        cell.userNameLabel.text = user.userName
-        cell.emailLabel.text = user.email
-        cell.addressLabel.text = user.address
+        let cell = tableview.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostCellView
+        let post = postList[indexPath.row]
+        cell.titleLabel.text = post.title
+        cell.bodyLabel.text = post.body
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableview.deselectRow(at: indexPath, animated: true)
-        let user = userList[indexPath.row]
-        let sceneFactory = UserPostSceneFactory()
-        sceneFactory.configurator = UserPostConfigurator(sceneFactory: sceneFactory)
-        sceneFactory.userID = user.userID
-        navigationController?.pushViewController(sceneFactory.makeScene(), animated: true)
-    }
 }
 
-extension UserListViewController: UserListViewControllerProtocol {
+extension UserPostViewController: UserPostViewControllerProtocol {
     
-    func displayUserList(list: [User]) {
-        self.userList = list
+    func displayPostList(list: [Post]) {
+        self.postList = list
         DispatchQueue.main.async { self.tableview.reloadData() }
     }
 }

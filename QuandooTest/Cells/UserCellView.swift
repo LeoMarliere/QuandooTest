@@ -12,7 +12,7 @@ class UserCellView: UITableViewCell {
     //MARK: UIComponent
     let cellView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.lightGray
+        view.backgroundColor = UIColor.darkGray
         view.layer.cornerRadius = 10
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -31,7 +31,7 @@ class UserCellView: UITableViewCell {
     let userNameLabel: UILabel = {
         let label = UILabel()
         label.text = "UserName"
-        label.textColor = UIColor.darkGray
+        label.textColor = UIColor.white
         label.font = UIFont.boldSystemFont(ofSize: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -73,6 +73,7 @@ class UserCellView: UITableViewCell {
         cellView.addSubview(emailLabel)
         cellView.addSubview(addressLabel)
         self.selectionStyle = .none
+        
         
         NSLayoutConstraint.activate([
             cellView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),

@@ -9,13 +9,13 @@ import UIKit
 
 protocol UserListSceneFactoryProtocol {
     var configurator: UserListConfigurator! { get set }
-    func makeLoginScene() -> UIViewController
+    func makeScene() -> UIViewController
 }
 
 final class UserListSceneFactory: UserListSceneFactoryProtocol {
     var configurator: UserListConfigurator!
     
-    func makeLoginScene() -> UIViewController {
+    func makeScene() -> UIViewController {
         let vc = UserListViewController()
         return configurator.configured(vc)
     }

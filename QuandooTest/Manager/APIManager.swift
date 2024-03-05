@@ -9,6 +9,8 @@ import Foundation
 
 protocol APIManagerProtocol: AnyObject {
     func fetchUserData(url: String, completion: @escaping([UserData]) -> Void)
+    func fetchPostData(url: String, completion: @escaping([PostData]) -> Void)
+    
 }
 
 class APIManager: APIManagerProtocol {
@@ -24,6 +26,22 @@ class APIManager: APIManagerProtocol {
             } else if let data = data {
                 userDataList = try! JSONDecoder().decode([UserData].self, from: data)
                 completion(userDataList)
+            }
+        }
+        task.resume()
+    }
+    
+    func fetchPostData(url: String, completion: @escaping ([PostData]) -> Void) {
+        
+        guard let url = URL(string: url) else { return }
+        var postDataList: [PostData] = []
+       
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if error != nil || data == nil {
+                print("Error while fetching data")
+            } else if let data = data {
+                postDataList = try! JSONDecoder().decode([PostData].self, from: data)
+                completion(postDataList)
             }
         }
         task.resume()

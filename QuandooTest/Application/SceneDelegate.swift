@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         let sceneFactory = UserListSceneFactory()
         sceneFactory.configurator = UserListConfigurator(sceneFactory: sceneFactory)
-        let navController = UINavigationController(rootViewController: sceneFactory.makeLoginScene())
+        let navController = UINavigationController(rootViewController: sceneFactory.makeScene())
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
     }
