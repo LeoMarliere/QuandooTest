@@ -101,8 +101,8 @@
 		23AA4C712B97459C003377E4 /* QuandooTest */ = {
 			isa = PBXGroup;
 			children = (
-				23AA4C722B97459C003377E4 /* AppDelegate.swift */,
-				23AA4C742B97459C003377E4 /* SceneDelegate.swift */,
+				23AA4CA52B974627003377E4 /* Application */,
+				23AA4CA62B974639003377E4 /* Scenes */,
 				23AA4C762B97459C003377E4 /* ViewController.swift */,
 				23AA4C782B97459C003377E4 /* Main.storyboard */,
 				23AA4C7E2B97459D003377E4 /* Assets.xcassets */,
@@ -128,6 +128,22 @@
 				23AA4C982B97459D003377E4 /* QuandooTestUITestsLaunchTests.swift */,
 			);
 			path = QuandooTestUITests;
+			sourceTree = "<group>";
+		};
+		23AA4CA52B974627003377E4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				23AA4C742B97459C003377E4 /* SceneDelegate.swift */,
+				23AA4C722B97459C003377E4 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		23AA4CA62B974639003377E4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
