@@ -8,16 +8,19 @@
 import Foundation
 
 protocol APIManagerProtocol: AnyObject {
-    func fetchUserData(url: String, completion: @escaping([UserData]) -> Void)
-    func fetchPostData(url: String, completion: @escaping([PostData]) -> Void)
+    func fetchUserData(completion: @escaping([UserData]) -> Void)
+    func fetchPostData(userID: String, completion: @escaping([PostData]) -> Void)
     
 }
 
 class APIManager: APIManagerProtocol {
     
-    func fetchUserData(url: String, completion: @escaping ([UserData]) -> Void) {
+    private let userURL = "https://jsonplaceholder.typicode.com/users"
+    private let postURL = "https://jsonplaceholder.typicode.com/posts?userId="
+    
+    func fetchUserData(completion: @escaping ([UserData]) -> Void) {
         
-        guard let url = URL(string: url) else { return }
+        guard let url = URL(string: userURL) else { return }
         var userDataList: [UserData] = []
        
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
@@ -31,9 +34,9 @@ class APIManager: APIManagerProtocol {
         task.resume()
     }
     
-    func fetchPostData(url: String, completion: @escaping ([PostData]) -> Void) {
+    func fetchPostData(userID: String, completion: @escaping ([PostData]) -> Void) {
         
-        guard let url = URL(string: url) else { return }
+        guard let url = URL(string: postURL+userID) else { return }
         var postDataList: [PostData] = []
        
         let task = URLSession.shared.dataTask(with: url) { data, response, error in

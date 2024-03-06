@@ -15,6 +15,9 @@ class PostCellView: UITableViewCell {
         view.backgroundColor = UIColor.lightGray
         view.layer.cornerRadius = 10
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.masksToBounds = true
+        view.layer.borderColor = UIColor.darkGray.cgColor
+        view.layer.borderWidth = 1.0
         return view
     }()
     
@@ -49,7 +52,14 @@ class PostCellView: UITableViewCell {
     }
     
     //MARK: Private Method
-    func setupView() {
+    func configure(post: Post) {
+        self.titleLabel.text = post.title
+        self.bodyLabel.text = post.body
+
+    }
+    
+    //MARK: Private Method
+    private func setupView() {
         addSubview(cellView)
         cellView.addSubview(titleLabel)
         cellView.addSubview(bodyLabel)
@@ -72,16 +82,9 @@ class PostCellView: UITableViewCell {
         bodyLabel.rightAnchor.constraint(equalTo: cellView.rightAnchor, constant: -20).isActive = true
     }
     
-    func configure(post: Post) {
-        self.titleLabel.text = post.title
-        self.bodyLabel.text = post.body
-
-    }
-    
     // MARK: - Height Calculation
       
       static func height(for post: Post, width: CGFloat) -> CGFloat {
-          // Calculate the height based on the content of the post
           let titleLabelHeight = heightForLabel(text: post.title, width: width, font: UIFont.boldSystemFont(ofSize: 14))
           let bodyLabelHeight = heightForLabel(text: post.body, width: width, font: UIFont.systemFont(ofSize: 12))
 

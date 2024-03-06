@@ -15,6 +15,9 @@ class UserCellView: UITableViewCell {
         view.backgroundColor = UIColor.yellow
         view.layer.cornerRadius = 10
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.masksToBounds = true
+        view.layer.borderColor = UIColor.darkGray.cgColor
+        view.layer.borderWidth = 1.0
         return view
     }()
     
@@ -65,15 +68,22 @@ class UserCellView: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: Public Method
+    func configure(user: User) {
+        self.nameLabel.text = user.name
+        self.userNameLabel.text = user.userName
+        self.emailLabel.text = user.email
+        self.addressLabel.text = user.address
+    }
+    
     //MARK: Private Method
-    func setupView() {
+    private func setupView() {
         addSubview(cellView)
         cellView.addSubview(nameLabel)
         cellView.addSubview(userNameLabel)
         cellView.addSubview(emailLabel)
         cellView.addSubview(addressLabel)
         self.selectionStyle = .none
-        
         
         NSLayoutConstraint.activate([
             cellView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
@@ -95,12 +105,4 @@ class UserCellView: UITableViewCell {
         addressLabel.rightAnchor.constraint(equalTo: cellView.rightAnchor, constant: -20).isActive = true
         addressLabel.topAnchor.constraint(equalTo: emailLabel.bottomAnchor, constant: 5).isActive = true
     }
-    
-    func configure(user: User) {
-        self.nameLabel.text = user.name
-        self.userNameLabel.text = user.userName
-        self.emailLabel.text = user.email
-        self.addressLabel.text = user.address
-    }
-    
 }

@@ -7,21 +7,19 @@
 
 import Foundation
 
-protocol UserPostInteractorProtocol: AnyObject {
+protocol PostsListInteractorProtocol: AnyObject {
     func fetchPostList(userID: String)
 }
 
-class UserPostInteractor {
-    var presenter: UserPostPresenterProtocol?
+class PostsListInteractor {
+    var presenter: PostsListPresenterProtocol?
     var apiManager: APIManagerProtocol?
-    
-    private let postURL = "https://jsonplaceholder.typicode.com/posts?userId="
 }
 
-extension UserPostInteractor: UserPostInteractorProtocol {
+extension PostsListInteractor: PostsListInteractorProtocol {
     
     func fetchPostList(userID: String) {
-        apiManager?.fetchPostData(url: postURL+userID) { postData in
+        apiManager?.fetchPostData(userID: userID) { postData in
             self.presenter?.presentPostList(postDataList: postData)
         }
     }

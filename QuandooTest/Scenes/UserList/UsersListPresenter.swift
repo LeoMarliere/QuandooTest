@@ -7,15 +7,15 @@
 
 import Foundation
 
-protocol UserListPresenterProtocol: AnyObject {
+protocol UsersListPresenterProtocol: AnyObject {
     func presentUserList(userDataList: [UserData])
 }
 
-class UserListPresenter {
-    var view: UserListViewControllerProtocol?
+class UsersListPresenter {
+    var view: UsersListViewControllerProtocol?
 }
 
-extension UserListPresenter: UserListPresenterProtocol {
+extension UsersListPresenter: UsersListPresenterProtocol {
     
     func presentUserList(userDataList: [UserData]) {
         

@@ -16,18 +16,18 @@
 		23AA4C8D2B97459D003377E4 /* QuandooTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4C8C2B97459D003377E4 /* QuandooTestTests.swift */; };
 		23AA4C972B97459D003377E4 /* QuandooTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4C962B97459D003377E4 /* QuandooTestUITests.swift */; };
 		23AA4C992B97459D003377E4 /* QuandooTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4C982B97459D003377E4 /* QuandooTestUITestsLaunchTests.swift */; };
-		23AA4CAA2B974D07003377E4 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CA92B974D07003377E4 /* UserListViewController.swift */; };
-		23AA4CAB2B974D07003377E4 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CA92B974D07003377E4 /* UserListViewController.swift */; };
-		23AA4CAC2B974D07003377E4 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CA92B974D07003377E4 /* UserListViewController.swift */; };
-		23AA4CAE2B974D17003377E4 /* UserListInterector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CAD2B974D17003377E4 /* UserListInterector.swift */; };
-		23AA4CAF2B974D17003377E4 /* UserListInterector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CAD2B974D17003377E4 /* UserListInterector.swift */; };
-		23AA4CB02B974D17003377E4 /* UserListInterector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CAD2B974D17003377E4 /* UserListInterector.swift */; };
-		23AA4CB22B974D20003377E4 /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CB12B974D20003377E4 /* UserListPresenter.swift */; };
-		23AA4CB32B974D20003377E4 /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CB12B974D20003377E4 /* UserListPresenter.swift */; };
-		23AA4CB42B974D20003377E4 /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CB12B974D20003377E4 /* UserListPresenter.swift */; };
-		23AA4CB62B974D2E003377E4 /* UserListSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CB52B974D2E003377E4 /* UserListSceneFactory.swift */; };
-		23AA4CB72B974D2E003377E4 /* UserListSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CB52B974D2E003377E4 /* UserListSceneFactory.swift */; };
-		23AA4CB82B974D2E003377E4 /* UserListSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CB52B974D2E003377E4 /* UserListSceneFactory.swift */; };
+		23AA4CAA2B974D07003377E4 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CA92B974D07003377E4 /* UsersListViewController.swift */; };
+		23AA4CAB2B974D07003377E4 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CA92B974D07003377E4 /* UsersListViewController.swift */; };
+		23AA4CAC2B974D07003377E4 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CA92B974D07003377E4 /* UsersListViewController.swift */; };
+		23AA4CAE2B974D17003377E4 /* UsersListInterector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CAD2B974D17003377E4 /* UsersListInterector.swift */; };
+		23AA4CAF2B974D17003377E4 /* UsersListInterector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CAD2B974D17003377E4 /* UsersListInterector.swift */; };
+		23AA4CB02B974D17003377E4 /* UsersListInterector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CAD2B974D17003377E4 /* UsersListInterector.swift */; };
+		23AA4CB22B974D20003377E4 /* UsersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CB12B974D20003377E4 /* UsersListPresenter.swift */; };
+		23AA4CB32B974D20003377E4 /* UsersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CB12B974D20003377E4 /* UsersListPresenter.swift */; };
+		23AA4CB42B974D20003377E4 /* UsersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CB12B974D20003377E4 /* UsersListPresenter.swift */; };
+		23AA4CB62B974D2E003377E4 /* UsersListSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CB52B974D2E003377E4 /* UsersListSceneFactory.swift */; };
+		23AA4CB72B974D2E003377E4 /* UsersListSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CB52B974D2E003377E4 /* UsersListSceneFactory.swift */; };
+		23AA4CB82B974D2E003377E4 /* UsersListSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CB52B974D2E003377E4 /* UsersListSceneFactory.swift */; };
 		23AA4CBB2B974DB5003377E4 /* UserListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CBA2B974DB5003377E4 /* UserListConfigurator.swift */; };
 		23AA4CBC2B974DB5003377E4 /* UserListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CBA2B974DB5003377E4 /* UserListConfigurator.swift */; };
 		23AA4CBD2B974DB5003377E4 /* UserListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA4CBA2B974DB5003377E4 /* UserListConfigurator.swift */; };
@@ -40,27 +40,27 @@
 		23E5048B2B9769EF0037A9D0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5048A2B9769EF0037A9D0 /* APIManager.swift */; };
 		23E5048C2B9769EF0037A9D0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5048A2B9769EF0037A9D0 /* APIManager.swift */; };
 		23E5048D2B9769EF0037A9D0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5048A2B9769EF0037A9D0 /* APIManager.swift */; };
-		23E504902B977C550037A9D0 /* UserPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5048F2B977C540037A9D0 /* UserPostViewController.swift */; };
-		23E504912B977C550037A9D0 /* UserPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5048F2B977C540037A9D0 /* UserPostViewController.swift */; };
-		23E504922B977C550037A9D0 /* UserPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5048F2B977C540037A9D0 /* UserPostViewController.swift */; };
-		23E504942B977C5E0037A9D0 /* UserPostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504932B977C5E0037A9D0 /* UserPostInteractor.swift */; };
-		23E504952B977C5E0037A9D0 /* UserPostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504932B977C5E0037A9D0 /* UserPostInteractor.swift */; };
-		23E504962B977C5E0037A9D0 /* UserPostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504932B977C5E0037A9D0 /* UserPostInteractor.swift */; };
-		23E504982B977C690037A9D0 /* UserPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504972B977C690037A9D0 /* UserPostPresenter.swift */; };
-		23E504992B977C690037A9D0 /* UserPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504972B977C690037A9D0 /* UserPostPresenter.swift */; };
-		23E5049A2B977C690037A9D0 /* UserPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504972B977C690037A9D0 /* UserPostPresenter.swift */; };
-		23E5049C2B977C770037A9D0 /* UserPostConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5049B2B977C770037A9D0 /* UserPostConfigurator.swift */; };
-		23E5049D2B977C770037A9D0 /* UserPostConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5049B2B977C770037A9D0 /* UserPostConfigurator.swift */; };
-		23E5049E2B977C770037A9D0 /* UserPostConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5049B2B977C770037A9D0 /* UserPostConfigurator.swift */; };
+		23E504902B977C550037A9D0 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5048F2B977C540037A9D0 /* PostsListViewController.swift */; };
+		23E504912B977C550037A9D0 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5048F2B977C540037A9D0 /* PostsListViewController.swift */; };
+		23E504922B977C550037A9D0 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5048F2B977C540037A9D0 /* PostsListViewController.swift */; };
+		23E504942B977C5E0037A9D0 /* PostsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504932B977C5E0037A9D0 /* PostsListInteractor.swift */; };
+		23E504952B977C5E0037A9D0 /* PostsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504932B977C5E0037A9D0 /* PostsListInteractor.swift */; };
+		23E504962B977C5E0037A9D0 /* PostsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504932B977C5E0037A9D0 /* PostsListInteractor.swift */; };
+		23E504982B977C690037A9D0 /* PostsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504972B977C690037A9D0 /* PostsListPresenter.swift */; };
+		23E504992B977C690037A9D0 /* PostsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504972B977C690037A9D0 /* PostsListPresenter.swift */; };
+		23E5049A2B977C690037A9D0 /* PostsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504972B977C690037A9D0 /* PostsListPresenter.swift */; };
+		23E5049C2B977C770037A9D0 /* PostsListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5049B2B977C770037A9D0 /* PostsListConfigurator.swift */; };
+		23E5049D2B977C770037A9D0 /* PostsListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5049B2B977C770037A9D0 /* PostsListConfigurator.swift */; };
+		23E5049E2B977C770037A9D0 /* PostsListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5049B2B977C770037A9D0 /* PostsListConfigurator.swift */; };
 		23E504A02B977D5C0037A9D0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5049F2B977D5C0037A9D0 /* Post.swift */; };
 		23E504A12B977D5C0037A9D0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5049F2B977D5C0037A9D0 /* Post.swift */; };
 		23E504A22B977D5C0037A9D0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5049F2B977D5C0037A9D0 /* Post.swift */; };
 		23E504A42B977EF10037A9D0 /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504A32B977EF10037A9D0 /* PostCellView.swift */; };
 		23E504A52B977EF10037A9D0 /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504A32B977EF10037A9D0 /* PostCellView.swift */; };
 		23E504A62B977EF10037A9D0 /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504A32B977EF10037A9D0 /* PostCellView.swift */; };
-		23E504A82B9780710037A9D0 /* UserPostSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504A72B9780710037A9D0 /* UserPostSceneFactory.swift */; };
-		23E504A92B9780710037A9D0 /* UserPostSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504A72B9780710037A9D0 /* UserPostSceneFactory.swift */; };
-		23E504AA2B9780710037A9D0 /* UserPostSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504A72B9780710037A9D0 /* UserPostSceneFactory.swift */; };
+		23E504A82B9780710037A9D0 /* PostsListSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504A72B9780710037A9D0 /* PostsListSceneFactory.swift */; };
+		23E504A92B9780710037A9D0 /* PostsListSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504A72B9780710037A9D0 /* PostsListSceneFactory.swift */; };
+		23E504AA2B9780710037A9D0 /* PostsListSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E504A72B9780710037A9D0 /* PostsListSceneFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,21 +94,21 @@
 		23AA4C922B97459D003377E4 /* QuandooTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuandooTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AA4C962B97459D003377E4 /* QuandooTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuandooTestUITests.swift; sourceTree = "<group>"; };
 		23AA4C982B97459D003377E4 /* QuandooTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuandooTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		23AA4CA92B974D07003377E4 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
-		23AA4CAD2B974D17003377E4 /* UserListInterector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInterector.swift; sourceTree = "<group>"; };
-		23AA4CB12B974D20003377E4 /* UserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
-		23AA4CB52B974D2E003377E4 /* UserListSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListSceneFactory.swift; sourceTree = "<group>"; };
+		23AA4CA92B974D07003377E4 /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		23AA4CAD2B974D17003377E4 /* UsersListInterector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListInterector.swift; sourceTree = "<group>"; };
+		23AA4CB12B974D20003377E4 /* UsersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListPresenter.swift; sourceTree = "<group>"; };
+		23AA4CB52B974D2E003377E4 /* UsersListSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListSceneFactory.swift; sourceTree = "<group>"; };
 		23AA4CBA2B974DB5003377E4 /* UserListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListConfigurator.swift; sourceTree = "<group>"; };
 		23AA4CBF2B97547E003377E4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		23AA4CC42B97568C003377E4 /* UserCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellView.swift; sourceTree = "<group>"; };
 		23E5048A2B9769EF0037A9D0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		23E5048F2B977C540037A9D0 /* UserPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostViewController.swift; sourceTree = "<group>"; };
-		23E504932B977C5E0037A9D0 /* UserPostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostInteractor.swift; sourceTree = "<group>"; };
-		23E504972B977C690037A9D0 /* UserPostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostPresenter.swift; sourceTree = "<group>"; };
-		23E5049B2B977C770037A9D0 /* UserPostConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostConfigurator.swift; sourceTree = "<group>"; };
+		23E5048F2B977C540037A9D0 /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
+		23E504932B977C5E0037A9D0 /* PostsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListInteractor.swift; sourceTree = "<group>"; };
+		23E504972B977C690037A9D0 /* PostsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListPresenter.swift; sourceTree = "<group>"; };
+		23E5049B2B977C770037A9D0 /* PostsListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListConfigurator.swift; sourceTree = "<group>"; };
 		23E5049F2B977D5C0037A9D0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		23E504A32B977EF10037A9D0 /* PostCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellView.swift; sourceTree = "<group>"; };
-		23E504A72B9780710037A9D0 /* UserPostSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostSceneFactory.swift; sourceTree = "<group>"; };
+		23E504A72B9780710037A9D0 /* PostsListSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListSceneFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,9 +212,9 @@
 		23AA4CA72B974CCA003377E4 /* UserList */ = {
 			isa = PBXGroup;
 			children = (
-				23AA4CA92B974D07003377E4 /* UserListViewController.swift */,
-				23AA4CAD2B974D17003377E4 /* UserListInterector.swift */,
-				23AA4CB12B974D20003377E4 /* UserListPresenter.swift */,
+				23AA4CA92B974D07003377E4 /* UsersListViewController.swift */,
+				23AA4CAD2B974D17003377E4 /* UsersListInterector.swift */,
+				23AA4CB12B974D20003377E4 /* UsersListPresenter.swift */,
 				23AA4CBA2B974DB5003377E4 /* UserListConfigurator.swift */,
 			);
 			path = UserList;
@@ -223,10 +223,10 @@
 		23AA4CA82B974CD0003377E4 /* UserPost */ = {
 			isa = PBXGroup;
 			children = (
-				23E5048F2B977C540037A9D0 /* UserPostViewController.swift */,
-				23E504932B977C5E0037A9D0 /* UserPostInteractor.swift */,
-				23E504972B977C690037A9D0 /* UserPostPresenter.swift */,
-				23E5049B2B977C770037A9D0 /* UserPostConfigurator.swift */,
+				23E5048F2B977C540037A9D0 /* PostsListViewController.swift */,
+				23E504932B977C5E0037A9D0 /* PostsListInteractor.swift */,
+				23E504972B977C690037A9D0 /* PostsListPresenter.swift */,
+				23E5049B2B977C770037A9D0 /* PostsListConfigurator.swift */,
 			);
 			path = UserPost;
 			sourceTree = "<group>";
@@ -234,8 +234,8 @@
 		23AA4CB92B974D8E003377E4 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				23AA4CB52B974D2E003377E4 /* UserListSceneFactory.swift */,
-				23E504A72B9780710037A9D0 /* UserPostSceneFactory.swift */,
+				23AA4CB52B974D2E003377E4 /* UsersListSceneFactory.swift */,
+				23E504A72B9780710037A9D0 /* PostsListSceneFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -397,14 +397,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23AA4CAA2B974D07003377E4 /* UserListViewController.swift in Sources */,
-				23E504982B977C690037A9D0 /* UserPostPresenter.swift in Sources */,
-				23E504A82B9780710037A9D0 /* UserPostSceneFactory.swift in Sources */,
-				23AA4CB22B974D20003377E4 /* UserListPresenter.swift in Sources */,
-				23E504942B977C5E0037A9D0 /* UserPostInteractor.swift in Sources */,
-				23AA4CB62B974D2E003377E4 /* UserListSceneFactory.swift in Sources */,
+				23AA4CAA2B974D07003377E4 /* UsersListViewController.swift in Sources */,
+				23E504982B977C690037A9D0 /* PostsListPresenter.swift in Sources */,
+				23E504A82B9780710037A9D0 /* PostsListSceneFactory.swift in Sources */,
+				23AA4CB22B974D20003377E4 /* UsersListPresenter.swift in Sources */,
+				23E504942B977C5E0037A9D0 /* PostsListInteractor.swift in Sources */,
+				23AA4CB62B974D2E003377E4 /* UsersListSceneFactory.swift in Sources */,
 				23AA4CC52B97568C003377E4 /* UserCellView.swift in Sources */,
-				23E5049C2B977C770037A9D0 /* UserPostConfigurator.swift in Sources */,
+				23E5049C2B977C770037A9D0 /* PostsListConfigurator.swift in Sources */,
 				23E504A42B977EF10037A9D0 /* PostCellView.swift in Sources */,
 				23E5048B2B9769EF0037A9D0 /* APIManager.swift in Sources */,
 				23AA4C732B97459C003377E4 /* AppDelegate.swift in Sources */,
@@ -413,8 +413,8 @@
 				23E504A02B977D5C0037A9D0 /* Post.swift in Sources */,
 				23AA4CBB2B974DB5003377E4 /* UserListConfigurator.swift in Sources */,
 				23AA4C7D2B97459C003377E4 /* QuandooTest.xcdatamodeld in Sources */,
-				23AA4CAE2B974D17003377E4 /* UserListInterector.swift in Sources */,
-				23E504902B977C550037A9D0 /* UserPostViewController.swift in Sources */,
+				23AA4CAE2B974D17003377E4 /* UsersListInterector.swift in Sources */,
+				23E504902B977C550037A9D0 /* PostsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,20 +422,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23E504A92B9780710037A9D0 /* UserPostSceneFactory.swift in Sources */,
+				23E504A92B9780710037A9D0 /* PostsListSceneFactory.swift in Sources */,
 				23E504A52B977EF10037A9D0 /* PostCellView.swift in Sources */,
 				23AA4C8D2B97459D003377E4 /* QuandooTestTests.swift in Sources */,
-				23AA4CB32B974D20003377E4 /* UserListPresenter.swift in Sources */,
-				23E504952B977C5E0037A9D0 /* UserPostInteractor.swift in Sources */,
-				23E504992B977C690037A9D0 /* UserPostPresenter.swift in Sources */,
-				23AA4CAB2B974D07003377E4 /* UserListViewController.swift in Sources */,
+				23AA4CB32B974D20003377E4 /* UsersListPresenter.swift in Sources */,
+				23E504952B977C5E0037A9D0 /* PostsListInteractor.swift in Sources */,
+				23E504992B977C690037A9D0 /* PostsListPresenter.swift in Sources */,
+				23AA4CAB2B974D07003377E4 /* UsersListViewController.swift in Sources */,
 				23E504A12B977D5C0037A9D0 /* Post.swift in Sources */,
-				23E5049D2B977C770037A9D0 /* UserPostConfigurator.swift in Sources */,
-				23E504912B977C550037A9D0 /* UserPostViewController.swift in Sources */,
+				23E5049D2B977C770037A9D0 /* PostsListConfigurator.swift in Sources */,
+				23E504912B977C550037A9D0 /* PostsListViewController.swift in Sources */,
 				23E5048C2B9769EF0037A9D0 /* APIManager.swift in Sources */,
 				23AA4CBC2B974DB5003377E4 /* UserListConfigurator.swift in Sources */,
-				23AA4CB72B974D2E003377E4 /* UserListSceneFactory.swift in Sources */,
-				23AA4CAF2B974D17003377E4 /* UserListInterector.swift in Sources */,
+				23AA4CB72B974D2E003377E4 /* UsersListSceneFactory.swift in Sources */,
+				23AA4CAF2B974D17003377E4 /* UsersListInterector.swift in Sources */,
 				23AA4CC12B97547E003377E4 /* User.swift in Sources */,
 				23AA4CC62B97568C003377E4 /* UserCellView.swift in Sources */,
 			);
@@ -445,20 +445,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23E504AA2B9780710037A9D0 /* UserPostSceneFactory.swift in Sources */,
+				23E504AA2B9780710037A9D0 /* PostsListSceneFactory.swift in Sources */,
 				23AA4C992B97459D003377E4 /* QuandooTestUITestsLaunchTests.swift in Sources */,
-				23AA4CB02B974D17003377E4 /* UserListInterector.swift in Sources */,
-				23E504922B977C550037A9D0 /* UserPostViewController.swift in Sources */,
-				23E504962B977C5E0037A9D0 /* UserPostInteractor.swift in Sources */,
-				23E5049A2B977C690037A9D0 /* UserPostPresenter.swift in Sources */,
+				23AA4CB02B974D17003377E4 /* UsersListInterector.swift in Sources */,
+				23E504922B977C550037A9D0 /* PostsListViewController.swift in Sources */,
+				23E504962B977C5E0037A9D0 /* PostsListInteractor.swift in Sources */,
+				23E5049A2B977C690037A9D0 /* PostsListPresenter.swift in Sources */,
 				23E5048D2B9769EF0037A9D0 /* APIManager.swift in Sources */,
 				23AA4C972B97459D003377E4 /* QuandooTestUITests.swift in Sources */,
-				23AA4CB42B974D20003377E4 /* UserListPresenter.swift in Sources */,
+				23AA4CB42B974D20003377E4 /* UsersListPresenter.swift in Sources */,
 				23AA4CC22B97547E003377E4 /* User.swift in Sources */,
 				23E504A22B977D5C0037A9D0 /* Post.swift in Sources */,
-				23E5049E2B977C770037A9D0 /* UserPostConfigurator.swift in Sources */,
-				23AA4CAC2B974D07003377E4 /* UserListViewController.swift in Sources */,
-				23AA4CB82B974D2E003377E4 /* UserListSceneFactory.swift in Sources */,
+				23E5049E2B977C770037A9D0 /* PostsListConfigurator.swift in Sources */,
+				23AA4CAC2B974D07003377E4 /* UsersListViewController.swift in Sources */,
+				23AA4CB82B974D2E003377E4 /* UsersListSceneFactory.swift in Sources */,
 				23AA4CC72B97568C003377E4 /* UserCellView.swift in Sources */,
 				23E504A62B977EF10037A9D0 /* PostCellView.swift in Sources */,
 				23AA4CBD2B974DB5003377E4 /* UserListConfigurator.swift in Sources */,

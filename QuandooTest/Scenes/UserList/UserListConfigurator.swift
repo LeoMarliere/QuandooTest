@@ -7,23 +7,23 @@
 
 import Foundation
 
-protocol UserListSceneConfiguratorProtocol {
-    func configured(_ vc: UserListViewController) -> UserListViewController
+protocol UsersListSceneConfiguratorProtocol {
+    func configured(_ vc: UsersListViewController) -> UsersListViewController
 }
 
-final class UserListConfigurator: UserListSceneConfiguratorProtocol {
-    private var sceneFactory: UserListSceneFactoryProtocol
+final class UsersListConfigurator: UsersListSceneConfiguratorProtocol {
+    private var sceneFactory: UsersListSceneFactoryProtocol
     
-    init(sceneFactory: UserListSceneFactoryProtocol) {
+    init(sceneFactory: UsersListSceneFactoryProtocol) {
         self.sceneFactory = sceneFactory
     }
     
     @discardableResult
-    func configured(_ vc: UserListViewController) -> UserListViewController {
+    func configured(_ vc: UsersListViewController) -> UsersListViewController {
         sceneFactory.configurator = self
         
-        let interactor = UserListInteractor()
-        let presenter = UserListPresenter()
+        let interactor = UsersListInteractor()
+        let presenter = UsersListPresenter()
         let apiManager = APIManager()
 
         presenter.view = vc

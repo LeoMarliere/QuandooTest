@@ -7,18 +7,17 @@
 
 import Foundation
 
-protocol UserPostPresenterProtocol: AnyObject {
+protocol PostsListPresenterProtocol: AnyObject {
     func presentPostList(postDataList: [PostData])
 }
 
-class UserPostPresenter {
-    var view: UserPostViewControllerProtocol?
+class PostsListPresenter {
+    var view: PostsListViewControllerProtocol?
 }
 
-extension UserPostPresenter: UserPostPresenterProtocol {
+extension PostsListPresenter: PostsListPresenterProtocol {
     
     func presentPostList(postDataList: [PostData]) {
-
         var myPostList: [Post] = []
         for postData in postDataList {
             myPostList.append(Post(postData: postData))
