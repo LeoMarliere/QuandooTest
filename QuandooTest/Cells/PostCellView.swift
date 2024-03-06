@@ -4,6 +4,7 @@
 //
 //  Created by Leo Marliere on 05/03/2024.
 //
+// This file is not used anymore as we switched the PostsLIstViewController to SwiftUI
 
 import UIKit
 

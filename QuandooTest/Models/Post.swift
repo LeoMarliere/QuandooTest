@@ -7,14 +7,21 @@
 
 import Foundation
 
-struct PostData: Codable {
+struct PostData: Codable, Equatable {
     let userId: Int
     let id: Int
     let title: String
     let body: String
+    
+    static func == (lhs: PostData, rhs: PostData) -> Bool {
+        return lhs.userId == rhs.userId &&
+        lhs.id == rhs.id &&
+        lhs.title == rhs.title &&
+        lhs.body == rhs.body
+    }
 }
 
-struct Post {
+struct Post: Identifiable {
     
     var id: Int
     var title: String
