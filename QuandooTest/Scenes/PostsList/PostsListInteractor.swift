@@ -8,10 +8,12 @@
 import Foundation
 
 protocol PostsListInteractorProtocol: AnyObject {
+    
     func fetchPostList(userID: String)
 }
 
 class PostsListInteractor {
+    
     var presenter: PostsListPresenterProtocol?
     var apiManager: APIManagerProtocol?
 }

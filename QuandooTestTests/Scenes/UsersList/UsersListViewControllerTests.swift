@@ -10,6 +10,23 @@ import XCTest
 
 class UsersListViewControllerTests: XCTestCase {
     
+    class MockUsersListInteractor: UsersListInteractorProtocol {
+        var fetchUserListCalled = false
+        
+        func fetchUserList() {
+            fetchUserListCalled = true
+        }
+    }
+
+    class MockNavigationController: UINavigationController {
+        var pushedViewController: UIViewController?
+        
+        override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+            pushedViewController = viewController
+            super.pushViewController(viewController, animated: animated)
+        }
+    }
+    
     var sut: UsersListViewController!
     var mockInteractor: MockUsersListInteractor!
     
@@ -33,15 +50,15 @@ class UsersListViewControllerTests: XCTestCase {
     }
     
     func test_DisplayUserList() {
-
+        
         let userData1 = UserData(id: 1,
-                                name: "John Doe",
-                                username: "johndoe",
-                                email: "john@example.com",
-                                address: Address(street: "123 Main St", suite: "Apt 101", city: "New York", zipcode: "10001", geo: Geo(lat: "40.7128", lng: "-74.0060")),
-                                phone: "123-456-7890",
-                                website: "www.example.com",
-                                company: Company(name: "Example Company", catchPhrase: "Catchy Phrase", bs: "BS"))
+                                 name: "John Doe",
+                                 username: "johndoe",
+                                 email: "john@example.com",
+                                 address: Address(street: "123 Main St", suite: "Apt 101", city: "New York", zipcode: "10001", geo: Geo(lat: "40.7128", lng: "-74.0060")),
+                                 phone: "123-456-7890",
+                                 website: "www.example.com",
+                                 company: Company(name: "Example Company", catchPhrase: "Catchy Phrase", bs: "BS"))
         
         let userData2 = UserData(id: 2,
                                  name: "Alice Johnson",
@@ -51,13 +68,13 @@ class UsersListViewControllerTests: XCTestCase {
                                  phone: "987-654-3210",
                                  website: "www.alice.com",
                                  company: Company(name: "ABC Corporation", catchPhrase: "Building Dreams", bs: "Business Strategy"))
-
+        
         let user1 = User(userData: userData1)
         let user2 = User(userData: userData2)
         let userList = [user1, user2]
         
         sut.displayUserList(list: userList)
-
+        
         let numberOfRows = sut.tableView(sut.tableview, numberOfRowsInSection: 0)
         XCTAssertEqual(numberOfRows, userList.count)
         
@@ -80,7 +97,7 @@ class UsersListViewControllerTests: XCTestCase {
         let window = UIWindow()
         window.rootViewController = mockNavigationController
         window.makeKeyAndVisible()
-    
+        
         let userData = UserData(id: 1,
                                 name: "John Doe",
                                 username: "johndoe",
@@ -89,7 +106,7 @@ class UsersListViewControllerTests: XCTestCase {
                                 phone: "123-456-7890",
                                 website: "www.example.com",
                                 company: Company(name: "Example Company", catchPhrase: "Catchy Phrase", bs: "BS"))
-
+        
         let user = User(userData: userData)
         let userList = [user]
         
@@ -107,22 +124,3 @@ class UsersListViewControllerTests: XCTestCase {
         XCTAssertEqual(postsListViewController.userID, user.userID)
     }
 }
-
-// Mock UsersListInteractor for testing
-class MockUsersListInteractor: UsersListInteractorProtocol {
-    var fetchUserListCalled = false
-    
-    func fetchUserList() {
-        fetchUserListCalled = true
-    }
-}
-
-class MockNavigationController: UINavigationController {
-        var pushedViewController: UIViewController?
-        
-        override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-            pushedViewController = viewController
-            super.pushViewController(viewController, animated: animated)
-        }
-    }
-

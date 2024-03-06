@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PostRow: View {
+    
     let post: Post
     
     var body: some View {
@@ -35,6 +36,7 @@ struct PostRow: View {
 
 
 protocol PostsListViewControllerProtocol: AnyObject {
+    
     func displayPostList(list: [Post])
 }
 
@@ -57,7 +59,7 @@ class PostsListViewController: UITableViewController {
         interactor?.fetchPostList(userID: String(self.userID))
     }
     
-    //MARK: Delegate & DataSource
+    //MARK: UITableViewController
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return postList.count
     }
@@ -73,6 +75,7 @@ class PostsListViewController: UITableViewController {
 }
 
 extension PostsListViewController: PostsListViewControllerProtocol {
+    
     func displayPostList(list: [Post]) {
         self.postList = list
         DispatchQueue.main.async { self.tableView.reloadData() }

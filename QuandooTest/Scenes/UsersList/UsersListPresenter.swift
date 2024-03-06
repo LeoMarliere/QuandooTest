@@ -8,10 +8,12 @@
 import Foundation
 
 protocol UsersListPresenterProtocol: AnyObject {
+    
     func presentUserList(userDataList: [UserData])
 }
 
 class UsersListPresenter {
+    
     var view: UsersListViewControllerProtocol?
 }
 

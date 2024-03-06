@@ -8,10 +8,12 @@
 import Foundation
 
 protocol UsersListSceneConfiguratorProtocol {
+    
     func configured(_ vc: UsersListViewController) -> UsersListViewController
 }
 
 final class UsersListConfigurator: UsersListSceneConfiguratorProtocol {
+    
     private var sceneFactory: UsersListSceneFactoryProtocol
     
     init(sceneFactory: UsersListSceneFactoryProtocol) {

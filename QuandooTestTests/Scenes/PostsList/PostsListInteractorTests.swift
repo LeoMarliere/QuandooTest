@@ -53,15 +53,12 @@ class PostsListInteractorTests: XCTestCase {
     }
     
     func test_FetchPostList() {
-        // Given
         let userID = "1"
         let expectedPostData = [PostData(userId: 1, id: 1, title: "Post 1", body: "Body of post 1")]
         mockAPIManager.fetchedPostData = expectedPostData
         
-        // When
         interactor.fetchPostList(userID: userID)
         
-        // Then
         XCTAssertTrue(mockAPIManager.fetchPostDataCalled, "fetchPostData should be called")
         XCTAssertTrue(mockPresenter.presentPostListCalled, "presentPostList should be called")
     }

@@ -8,11 +8,13 @@
 import UIKit
 
 protocol UsersListSceneFactoryProtocol {
+    
     var configurator: UsersListConfigurator! { get set }
     func makeScene() -> UIViewController
 }
 
 final class UsersListSceneFactory: UsersListSceneFactoryProtocol {
+    
     var configurator: UsersListConfigurator!
     
     func makeScene() -> UIViewController {

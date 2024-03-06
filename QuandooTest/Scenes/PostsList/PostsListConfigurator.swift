@@ -8,10 +8,12 @@
 import Foundation
 
 protocol PostsListSceneConfiguratorProtocol {
+    
     func configured(_ vc: PostsListViewController) -> PostsListViewController
 }
 
 final class PostsListConfigurator: PostsListSceneConfiguratorProtocol {
+    
     private var sceneFactory: PostsListSceneFactoryProtocol
     
     init(sceneFactory: PostsListSceneFactoryProtocol) {

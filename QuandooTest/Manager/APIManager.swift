@@ -8,6 +8,7 @@
 import Foundation
 
 protocol APIManagerProtocol: AnyObject {
+    
     func fetchUserData(completion: @escaping([UserData]) -> Void)
     func fetchPostData(userID: String, completion: @escaping([PostData]) -> Void)
 }

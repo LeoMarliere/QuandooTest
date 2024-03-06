@@ -5,9 +5,10 @@
 //  Created by Leo Marliere on 05/03/2024.
 //
 
-import UIKit
+import SwiftUI
 
 protocol PostsListSceneFactoryProtocol {
+    
     var configurator: PostsListConfigurator! { get set }
     var userID: Int! { get set }
     func makeScene() -> UIViewController

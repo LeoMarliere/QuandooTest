@@ -9,7 +9,6 @@ import XCTest
 
 class UsersListInteractorTests: XCTestCase {
     
-    // Mock UsersListPresenter class
     class MockUsersListPresenter: UsersListPresenterProtocol {
         var presentUserListCalled = false
         var presentedUserData : [UserData]?
@@ -20,7 +19,6 @@ class UsersListInteractorTests: XCTestCase {
         }
     }
     
-    // Mock APIManager class
     class MockAPIManager: APIManagerProtocol {
         var fetchDataCalled = false
         var fetchUserDataCompletionHandler: (([UserData]) -> Void)?

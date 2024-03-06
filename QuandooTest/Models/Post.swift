@@ -8,6 +8,7 @@
 import Foundation
 
 struct PostData: Codable, Equatable {
+    
     let userId: Int
     let id: Int
     let title: String
