@@ -34,6 +34,15 @@ struct PostRow: View {
     }
 }
 
+class PostListViewModel: ObservableObject {
+    
+    @Published var posts : [Post]
+    
+    init(posts: [Post]) {
+        self.posts = posts
+    }
+    
+}
 
 protocol PostsListViewControllerProtocol: AnyObject {
     
@@ -43,8 +52,8 @@ protocol PostsListViewControllerProtocol: AnyObject {
 class PostsListViewController: UITableViewController {
     
     //MARK: Properties
+    @ObservedObject var viewModel: PostListViewModel = PostListViewModel(posts: [])
     var interactor: PostsListInteractorProtocol?
-    var postList: [Post] = []
     var userID: Int = 0
     
     private let screenTitle: String = "Posts List"
@@ -61,13 +70,13 @@ class PostsListViewController: UITableViewController {
     
     //MARK: UITableViewController
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return postList.count
+        return viewModel.posts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         cell.contentConfiguration = UIHostingConfiguration(content: {
-            PostRow(post: postList[indexPath.row])
+            PostRow(post: viewModel.posts[indexPath.row])
         })
         
         return cell
@@ -77,7 +86,6 @@ class PostsListViewController: UITableViewController {
 extension PostsListViewController: PostsListViewControllerProtocol {
     
     func displayPostList(list: [Post]) {
-        self.postList = list
-        DispatchQueue.main.async { self.tableView.reloadData() }
+        self.viewModel = PostListViewModel(posts: list)
     }
 }

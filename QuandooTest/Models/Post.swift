@@ -22,7 +22,7 @@ struct PostData: Codable, Equatable {
     }
 }
 
-struct Post: Identifiable {
+class Post: Identifiable, ObservableObject, Equatable {
     
     var id: Int
     var title: String
@@ -32,5 +32,11 @@ struct Post: Identifiable {
         self.id = postData.id
         self.title = postData.title
         self.body = postData.body
+    }
+    
+    static func == (lhs: Post, rhs: Post) -> Bool {
+        return lhs.id == rhs.id &&
+        lhs.title == rhs.title &&
+        lhs.body == rhs.body
     }
 }
