@@ -15,7 +15,7 @@ class UsersListViewController: UIViewController, UITableViewDelegate,  UITableVi
     
     //MARK: Properties
     var interactor: UsersListInteractorProtocol?
-    var userList: [User] = []
+    private var userList: [User] = []
     
     private let screenTitle: String = "Users List"
     private let cellIdentifier: String = "userCell"
