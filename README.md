@@ -7,6 +7,12 @@ the selected User.
 For a full description of the test, check the following URL :
 https://gitlab.com/quandoo-recruitment/ios-engineer
 
+# Installation
+
+You just need to clone the project using the following command :
+- git clone https://github.com/LeoMarliere/QuandooTest.git
+
+Then you can start the project without anything more needed.
 
 # Application Architecture : VIP
 
@@ -15,7 +21,6 @@ The application is build following the VIP Pattern. Each screen is made of a Vie
 The ViewController is in share on the UI and of the user interactions.
 The Interactor is in charge of all the logic, and is used to fetch the data.
 The Presenter is in charge of mapping the Data and transfering them to the View.
-
 
 # Features
 
