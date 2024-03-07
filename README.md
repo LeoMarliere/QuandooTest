@@ -29,3 +29,8 @@ The application have 2 features.
 The first one is the display of a list of User. This screen open when you strat the app. Every users have a name, a surname, an email and an address. The list is fetched from a distant API. This screen is build using UIKit.
 
 The second feature is the display of a list of Post. When the user click on an User in the first screen, we open the second screen. We fetch and display all the post associated with the selected user. Every post have a title and a body. This screen is build using SwuiftUI.
+For this screen, I could have just create a simple View that display the list of Post, which would have been fetched from the first screen. But I decided to create a full independant screen that just need to get the UserID from the previous screen. LIke this, we could possibly add new feature related to this screen, like cell selection or else. 
+
+# Test Coverage
+
+The application is tested at 80%

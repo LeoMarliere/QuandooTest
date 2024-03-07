@@ -87,5 +87,6 @@ extension PostsListViewController: PostsListViewControllerProtocol {
     
     func displayPostList(list: [Post]) {
         self.viewModel = PostListViewModel(posts: list)
+        DispatchQueue.main.async { self.tableView.reloadData() }
     }
 }
