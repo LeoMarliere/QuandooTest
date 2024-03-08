@@ -42,7 +42,7 @@ protocol PostsListViewControllerProtocol: AnyObject {
 class PostsListViewController: UITableViewController {
     
     //MARK: Properties
-    private var posts: [Post] = []
+    var posts: [Post] = []
     var interactor: PostsListInteractorProtocol?
     var userID: Int = 0
     
